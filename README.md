@@ -2,7 +2,7 @@
 
 ## VS Code
 
-### [Settings](/iRomain/my-environment/blob/master/~/Library/Application%20Support/Code/User/settings.json)
+### [Settings](https://github.com/iRomain/my-environment/blob/master/~/Library/Application%20Support/Code/User/settings.json)
 
 ### Extensions
 
