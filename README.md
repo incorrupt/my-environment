@@ -28,6 +28,13 @@ npm i -g eslint
 
 ### [Settings](https://github.com/iRomain/my-environment/blob/master/~/Library/Application%20Support/Code/User/settings.json)
 
+### Add Code CLI to $PATH
+
+```sh
+echo '# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"' >> ~/.zshrc
+```
+
 ### Extensions
 
 ```sh
