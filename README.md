@@ -1,5 +1,11 @@
 # My local setup
 
+## ESLint
+
+```sh
+npm i -g eslint
+```
+
 ## VS Code
 
 ### [Settings](https://github.com/iRomain/my-environment/blob/master/~/Library/Application%20Support/Code/User/settings.json)
