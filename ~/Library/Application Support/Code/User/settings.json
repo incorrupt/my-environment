@@ -4,6 +4,7 @@
   /**********/
   "eslint.alwaysShowStatus": true,
   "eslint.autoFixOnSave": true,
+  "eslint.packageManager": "yarn",
   "eslint.validate": [
     {
       "language": "vue",
