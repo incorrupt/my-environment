@@ -3,26 +3,8 @@
   /* ESLint */
   /**********/
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
-  "eslint.validate": [
-    {
-      "language": "vue",
-      "autoFix": true
-    },
-    {
-      "language": "html",
-      "autoFix": true
-    },
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "typescript",
-      "autoFix": true
-    }
-  ],
+  "eslint.validate": ["vue", "html", "javascript", "typescript"],
   /************/
   /* Prettier */
   /************/
@@ -32,16 +14,13 @@
   /* Terraform */
   /*************/
   "terraform.indexing": {
-    "enabled": true,
+    "enabled": false,
     "liveIndexing": false,
     "delay": 500,
-    "exclude": [
-      ".terraform/**/*",
-      "**/.terraform/**/*"
-    ]
+    "exclude": [".terraform/**/*", "**/.terraform/**/*"]
   },
   "terraform.languageServer": {
-    "enabled": false,
+    "enabled": true,
     "args": []
   },
   /*******/
@@ -93,9 +72,20 @@
   /**********/
   "editor.codeActionsOnSave": {
     "source.organizeImports": true,
+    "source.fixAll.eslint": true
   },
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnPaste": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "markdown.preview.fontFamily": "Calibri, Roboto, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
+  "files.autoSave": "off",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.shell.osx": "/bin/zsh"
 }
