@@ -10,11 +10,24 @@ setopt interactivecomments
 ## Homebrew
 
 ```sh
-# Javascript / Typescript
-brew install yarn
+# Web
+brew install nvm yarn
 
-# Terraform
-brew install terraform
+# Android
+brew install openjdk
+brew cask install adoptopenjdk8 android-studio
+
+# Devops
+brew install terraform terraform-docs tflint tfsec packer awscli ansible
+
+# Encryption
+brew install pinentry pinentry-mac gnupg
+brew cask install keybase
+
+# Various
+brew install starship thefuck wget jq
+brew cask install qlcolorcode qlimagesize qlmarkdown qlstephen qlvideo quicklook-json quicklookase suspicious-package
+
 ```
 
 ## NPM
@@ -23,6 +36,10 @@ brew install terraform
 # Javascript / Typescript
 npm i -g eslint
 ```
+
+## Terminal
+
+[Meslo LG L Regular 12pt (nerd font version of Apple's Menlo)](https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.zip)
 
 ## VS Code
 
