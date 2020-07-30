@@ -1,0 +1,9 @@
+[custom.aws]
+command = """ echo "$AWS_PROFILE(${AWS_DEFAULT_REGION:-${AWS_REGION:-${$(cat ~/.aws/config | sed -n "/profile $AWS_PROFILE/{n;p;}" | cut -f2- -d=):-$(cat ~/.aws/config | sed -n "/default/{n;p;}" | cut -f2- -d=)}}})" """
+prefix = "☁️  "
+extensions = ["tf"]
+directories = [".terraform"]
+style="bold yellow"
+
+[aws]
+disabled = true
