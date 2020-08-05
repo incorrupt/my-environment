@@ -1,28 +1,46 @@
 {
+  /************/
+  /* HTML/CSS */
+  /************/
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)"
+  ],
+
   /**********/
   /* ESLint */
   /**********/
   "eslint.alwaysShowStatus": true,
   "eslint.packageManager": "yarn",
   "eslint.validate": ["vue", "html", "javascript", "typescript"],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+
   /************/
-  /* Prettier */
+  /* Markdown */
   /************/
-  "prettier.singleQuote": true,
-  "prettier.semi": false,
+  "markdown.preview.fontFamily": "Calibri, Roboto, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
+
   /*************/
   /* Terraform */
   /*************/
-  "terraform.indexing": {
-    "enabled": false,
-    "liveIndexing": false,
-    "delay": 500,
-    "exclude": [".terraform/**/*", "**/.terraform/**/*"]
-  },
   "terraform.languageServer": {
-    "enabled": true,
-    "args": []
+    "external": true,
+    "args": ["serve"]
   },
+
   /*******/
   /* Vue */
   /*******/
@@ -67,25 +85,67 @@
     "aria-.+",
     "$unknown$"
   ],
-  /**********/
-  /* Editor */
-  /**********/
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-    "source.fixAll.eslint": true
-  },
-  "editor.tabSize": 2,
+
+  /*****************/
+  /* Spell-checker */
+  /*****************/
+  "cSpell.userWords": [
+    "Barissat",
+    "Romain",
+    "builtins",
+    "iife",
+    "kanban",
+    "olivr",
+    "symlink"
+  ],
+  "cSpell.ignorePaths": [
+    "**/node_modules",
+    "**/.git",
+    "**/vendor",
+    "**/.terraform",
+    "**/dist"
+  ],
+
+  /*******************/
+  /* Code formatting */
+  /*******************/
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "workbench.iconTheme": "vscode-icons",
   "editor.formatOnPaste": true,
-  "vsicons.dontShowNewVersionMessage": true,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "markdown.preview.fontFamily": "Calibri, Roboto, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
-  "files.autoSave": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.shell.osx": "/bin/zsh"
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  /************/
+  /* Terminal */
+  /************/
+  "terminal.integrated.fontFamily": "MesloLGL Nerd Font",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.env.osx": {
+    "STARSHIP_CONFIG": "${env:HOME}/.config/starship.vscode.toml"
+  },
+
+  /**********/
+  /* Editor */
+  /**********/
+  "editor.fontFamily": "'Rec Mono Duotone', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontLigatures": "'ss01','ss03', 'ss06'",
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+
+  "files.autoSave": "off",
+
+  "vsicons.dontShowNewVersionMessage": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.iconTheme": "vscode-icons"
 }
