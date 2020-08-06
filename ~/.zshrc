@@ -4,6 +4,7 @@ alias serve='open http://localhost:8082 && hrs'
 # Plugins
 eval $(thefuck --alias)
 eval $(starship init zsh)
+source ~/.autoenv/activate.sh
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
