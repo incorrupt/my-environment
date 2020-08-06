@@ -7,11 +7,11 @@ setopt interactivecomments
 # Comments are now enabled
 ```
 
-## Homebrew
+## Toolchain
 
 ```sh
 # Web
-brew install nvm yarn
+brew install nvm yarn 
 
 # Android
 brew install openjdk
@@ -27,7 +27,7 @@ brew cask install keybase
 # Various
 brew install starship thefuck wget jq
 brew cask install qlcolorcode qlimagesize qlmarkdown qlstephen qlvideo quicklook-json quicklookase suspicious-package
-
+git clone git://github.com/inishchith/autoenv.git ~/.autoenv
 ```
 
 ## NPM
